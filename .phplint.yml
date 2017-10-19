@@ -1,0 +1,12 @@
+path: ./web
+extensions:
+  - php
+  - module
+  - inc
+  - install
+exclude:
+  - core
+  - modules/contrib
+  - themes/contrib
+  - profiles/contrib
+  - libraries

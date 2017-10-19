@@ -28,10 +28,13 @@
     "require-dev": {
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
+        "drupal/coder": "8.2.9",
         "jcalderonzumba/gastonjs": "~1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
         "mikey179/vfsstream": "~1.2",
+        "overtrue/phplint": "^0.2.4",
         "phpunit/phpunit": ">=4.8.28 <5",
+        "squizlabs/php_codesniffer": "2.7.0",
         "symfony/css-selector": "~2.8|~3.0"
     },
     "conflict": {
@@ -62,7 +65,9 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "test": [
-            "./vendor/bin/phpunit || true"
+            "./vendor/bin/phpunit || true",
+            "./vendor/bin/phplint --configuration=.phplint.yml --no-cache ./web/modules/custom",
+            "./vendor/bin/phpcs --standard=./vendor/drupal/coder/coder_sniffer/Drupal ./web/modules/custom --extensions=php,inc,module,install"
         ]
     },
     "extra": {
