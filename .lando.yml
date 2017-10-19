@@ -86,3 +86,9 @@ config:
     # server: config/drupal8.conf
     # database: config/mysql
     # php: config/php.ini
+
+services:
+  appserver:
+    # Add a Build Step to your App.
+    build:
+      - "cd $LANDO_MOUNT && composer install"
