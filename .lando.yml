@@ -92,3 +92,8 @@ services:
     # Add a Build Step to your App.
     build:
       - "cd $LANDO_MOUNT && composer install"
+
+tooling:
+  phpunit:
+    service: appserver
+    description: "Run PHP Unit tests: lando phpunit"
