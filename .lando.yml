@@ -8,7 +8,9 @@ config:
 services:
   appserver:
     build:
-      - "cd $LANDO_MOUNT && composer install"
+      - chmod 0775 /app/web/sites/default
+      - composer install
+      - cp --force /app/conf/lando/settings.lando.php /app/web/sites/default/settings.local.php
 tooling:
   phpunit:
     service: appserver

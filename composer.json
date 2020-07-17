@@ -65,6 +65,13 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "file-mapping": {
+            "[web-root]/sites/default/settings.php": {
+                "mode": "replace",
+                "path": "conf/drupal/settings.php",
+                "overwrite": true
+            }
         }
     }
 }
