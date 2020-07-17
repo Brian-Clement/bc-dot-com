@@ -71,7 +71,7 @@ config:
   # database: mariadb:10.1
 
   # Optionally activate xdebug
-  xdebug: true
+  # xdebug: true
 
   # Optionally mix in your own config files
   #
