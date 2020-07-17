@@ -16,7 +16,7 @@ config:
   #
   # NOTE: that this needs to be wrapped in quotes so that it is a string
   #
-  #php: '7.1'
+  php: '7.3'
 
   # Optionally specify whether you want to serve drupal via nginx or apache
   #
@@ -91,7 +91,7 @@ services:
   appserver:
     # Add a Build Step to your App.
     build:
-      - "cd $LANDO_MOUNT && composer install"
+      # - "cd $LANDO_MOUNT && composer install"
 
 tooling:
   phpunit:
