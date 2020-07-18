@@ -23,6 +23,7 @@
         "drupal/core-recommended": "^8.8",
         "drupal/olivero": "^1.0@alpha",
         "drupal/pathauto": "^1.8",
+        "drupal/tome": "^1.4",
         "drush/drush": "^9.0",
         "zaporylie/composer-drupal-optimizations": "^1.1"
     },
