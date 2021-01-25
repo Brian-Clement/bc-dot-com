@@ -1,8 +1,8 @@
 name: bc-dot-com
-recipe: drupal8
+recipe: drupal9
 config:
-  composer_version: 1-latest
-  php: '7.3'
+  composer_version: 2-latest
+  php: '7.4'
   webroot: 'web'
   # Optionally activate xdebug
   # xdebug: true
@@ -16,3 +16,7 @@ tooling:
   phpunit:
     service: appserver
     description: "Run PHP Unit tests: lando phpunit"
+  update-settings:
+    service: appserver
+    cmd:
+      - cp --force /app/conf/lando/settings.lando.php /app/web/sites/default/settings.local.php
