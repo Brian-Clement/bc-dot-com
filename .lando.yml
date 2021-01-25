@@ -1,6 +1,7 @@
 name: bc-dot-com
 recipe: drupal8
 config:
+  composer_version: 1-latest
   php: '7.3'
   webroot: 'web'
   # Optionally activate xdebug
