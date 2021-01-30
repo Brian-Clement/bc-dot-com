@@ -9,9 +9,8 @@ config:
 services:
   appserver:
     build:
-      - chmod 0775 /app/web/sites/default
       - composer install
-      - cp --force /app/conf/lando/settings.lando.php /app/web/sites/default/settings.local.php
+      - bash conf/lando/setup.sh
 tooling:
   phpunit:
     service: appserver
@@ -19,4 +18,4 @@ tooling:
   update-settings:
     service: appserver
     cmd:
-      - cp --force /app/conf/lando/settings.lando.php /app/web/sites/default/settings.local.php
+      - bash conf/lando/setup.sh
