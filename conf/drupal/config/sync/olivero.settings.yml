@@ -8,9 +8,10 @@ features:
   favicon: true
 logo:
   use_default: false
+  path: ''
 favicon:
   use_default: true
 mobile_menu_all_widths: 0
-site_branding_bg_color: default
+site_branding_bg_color: white
 _core:
   default_config_hash: c5kVSCNYXyJ7W0sRejtsXfs_pSQdS1OMzYMS1y2dLx8
