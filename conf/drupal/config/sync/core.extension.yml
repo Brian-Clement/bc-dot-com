@@ -7,6 +7,7 @@ module:
   breakpoint: 0
   ckeditor: 0
   codesnippet: 0
+  config: 0
   contextual: 0
   ctools: 0
   dblog: 0
@@ -16,10 +17,14 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  link: 0
+  menu_link_content: 0
+  menu_ui: 0
   node: 0
   page_cache: 0
   path: 0
   path_alias: 0
+  quickedit: 0
   serialization: 0
   system: 0
   taxonomy: 0
